@@ -29,7 +29,7 @@ npm run build - Build an optimized version for deployment. A new folder called b
 ## Layout of source files
 
 ### Public > Index.html
-Content of the Dapp is served between <div id="root"></div>. Any content added above this root div will show above the Dapp, like a header. Any content added below will display like a footer.
+Content of the Dapp is served within the root div. Any content added above this root div will show above the Dapp, like a header. Any content added below will display like a footer.
 
 ### src > Index.css
 Css file for modifying styles.
@@ -45,7 +45,7 @@ When you click "Initialize new transaction" on the dashboard, the right side cha
 
 ## Adding your header & footer
 
-Under Public > Index.html, the Dapp is rendered within <div id="root"></div>. Custom header and footers can be added above and below this div.
+Under Public > Index.html, the Dapp is rendered within the root div. Custom header and footers can be added above and below this div.
 
 
 ## Hardcoding Escrow Agent address
@@ -66,7 +66,8 @@ Line 425 to 434 and 368 to 377 contains the Escrow Address input field. Remove b
 
 ![Remove] (https://user-images.githubusercontent.com/24837709/32030707-6ec46738-ba2f-11e7-8fe3-5dd84c7a6181.png)
 
-
+## Further questions
+If you need assistance integrating/modifying EsrowMyEther for your site, feel free to raise a github issue or contact me at escrowmyether[at]gmail[dot]com
 
 ## Authors
 
