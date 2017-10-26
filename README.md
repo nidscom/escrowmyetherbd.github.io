@@ -17,9 +17,10 @@ EscrowMyEther is a static html/css/javascript/ReactJS site and a client-side int
 ## Modifying for your own usage
 
 1)	Copy the "Source Files" folder
-2)	Extract node_modules.zip
-3)  Cd into this folder. 
+2)	Download node_modules.zip from this link: https://drive.google.com/open?id=0By0DAad8QzZAUjBDQ1VJQmZieTg
+3)  Copy the extracted folder into "Source Files" folder
 4)	Install NodeJS. v8.1.4 is recommended as it's used in the development of this Dapp.
+5)  You can then modify the Dapp for your usage. The below commands will be helpful.
 
 npm start - Start a local version of the Dapp in your browser localhost:3000. It automatically reloads the Dapp when you save any updates to the source files. Useful during development.
 
