@@ -66,6 +66,8 @@ Line 425 to 434 and 368 to 377 contains the Escrow Address input field. Remove b
 
 ![Remove](https://user-images.githubusercontent.com/24837709/32030707-6ec46738-ba2f-11e7-8fe3-5dd84c7a6181.png)
 
+4) Your address will then be the Escrow Agent for all transactions on your site.
+
 ## Further questions
 If you need assistance integrating/modifying EsrowMyEther for your site, feel free to raise a github issue or contact me at escrowmyether[at]gmail[dot]com
 
