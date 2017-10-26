@@ -40,8 +40,11 @@ The buyer dashboard page you see when visiting https://escrowmyetherbd.github.io
 ### src > NewTransactionRS.js
 When you click "Initialize new transaction" on the dashboard, the right side changes to this page. This page should be modified if you wish to hardcode your address as the escrow agent or seller.
 
+![newtx](https://user-images.githubusercontent.com/24837709/31051404-cfbd440a-a699-11e7-9c97-0f9134f3cdaf.jpg)
 
-
+### src > SpecificTx.js
+The right side of the dashboard changes to this page when an existing transaction is clicked.
+![tx](https://user-images.githubusercontent.com/24837709/31041943-3ef37698-a5d0-11e7-87bc-f15ca9d95e04.jpg)
 
 ## Adding your header & footer
 
@@ -69,7 +72,7 @@ Line 425 to 434 and 368 to 377 contains the Escrow Address input field. Remove b
 4) Your address will then be the Escrow Agent for all transactions on your site.
 
 ## Further questions
-If you need assistance integrating/modifying EsrowMyEther for your site, feel free to raise a github issue or contact me at escrowmyether[at]gmail[dot]com
+If you need assistance integrating/modifying EsrowMyEther for your site, feel free to raise a github issue or contact me at escrowmyether[at]gmail[dot]com.
 
 ## Authors
 
