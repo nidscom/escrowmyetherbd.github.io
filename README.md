@@ -12,9 +12,9 @@ This repo is hosted on github pages: https://escrowmyetherbd.github.io/
 There are several ways to integrate the buyer dashboard in your site. The easiest way is cloning this repository on github and running it on github pages, and replacing the github.io domain with your subdomain (dashboard.yoursite.com).
 For more info on setting up github pages, visit: https://pages.github.com/
 
-EscrowMyEther is a static html/css/javascript/ReactJS site and a client-side interface to the escrow smart contract. 
+EscrowMyEther is a static html/css/javascript/ReactJS site and a client-side interface to the escrow smart contract. No special hosting environment is required if you choose to copy the repo and run it on your site.
 
-## Modifying for your own usage
+## Modifying for your own usage - Get started
 
 1)	Copy the "Source Files" folder
 2)	Download node_modules.zip from this link: https://drive.google.com/open?id=0By0DAad8QzZAUjBDQ1VJQmZieTg
@@ -25,6 +25,22 @@ EscrowMyEther is a static html/css/javascript/ReactJS site and a client-side int
 npm start - Start a local version of the Dapp in your browser localhost:3000. It automatically reloads the Dapp when you save any updates to the source files. Useful during development.
 
 npm run build - Build an optimized version for deployment. A new folder called build_webpack will be created with the optimized version. You can upload the content of build_webpack directly to github pages for deployment.
+
+## Layout of source files
+
+### Public > Index.html
+Content of the Dapp is served between <div id="root"></div>. Any content added above this root div will show above the Dapp, like a header. Any content added below will display like a footer.
+
+### src > Index.css
+Css file for modifying styles.
+
+### src > BuyerHome.js
+The buyer dashboard page you see when visiting https://escrowmyetherbd.github.io/
+
+### src > NewTransactionRS.js
+When you click "Initialize new transaction" on the dashboard, the right side changes to this page. This page should be modified if you wish to hardcode your address as the escrow agent or seller.
+
+
 
 
 ## Adding your header & footer
