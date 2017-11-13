@@ -30,11 +30,15 @@ npm run build - Build an optimized version for deployment. A new folder called b
 
 1)	Head to source files > src > App.js
 2) Change line 6 from the first line to 2nd line: 
+
 import BuyerHome from "./BuyerHome"
+
 import SellerHome from "./SellerHome"
 
 3) Change line 19 the first line to 2nd line: 
+
 {this.props.children || <BuyerHome/>}
+
 {this.props.children || <SellerHome/>}
 
 4) npm run build. You will build the static site for Seller dashboard.
