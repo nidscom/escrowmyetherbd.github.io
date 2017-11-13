@@ -1,6 +1,6 @@
 # For Developers - EscrowMyEther Buyer Dashboard
 
-This repo is for developers who are looking to integrate EscrowMyEther on their site. This repo is just for buyer dashboard. (Seller dashboard repo will be up soon)
+This repo is for developers who are looking to integrate EscrowMyEther on their site. 
 
 
 
@@ -26,6 +26,19 @@ npm start - Start a local version of the Dapp in your browser localhost:3000. It
 
 npm run build - Build an optimized version for deployment. A new folder called build_webpack will be created with the optimized version. You can upload the content of build_webpack directly to github pages for deployment.
 
+## Setting up Seller dashboard
+
+1)	Head to source files > src > App.js
+2) Change line 6 from the first line to 2nd line: 
+import BuyerHome from "./BuyerHome"
+import SellerHome from "./SellerHome"
+
+3) Change line 19 the first line to 2nd line: 
+{this.props.children || <BuyerHome/>}
+{this.props.children || <SellerHome/>}
+
+4) npm run build. You will build the static site for Seller dashboard.
+
 ## Layout of source files
 
 ### Public > Index.html
@@ -36,6 +49,9 @@ Css file for modifying styles.
 
 ### src > BuyerHome.js
 The buyer dashboard page you see when visiting https://escrowmyetherbd.github.io/
+
+### src > SellerHome.js
+The seller dashboard page
 
 ### src > NewTransactionRS.js
 When you click "Initialize new transaction" on the dashboard, the right side changes to this page. This page should be modified if you wish to hardcode your address as the escrow agent or seller.
