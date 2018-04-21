@@ -303,7 +303,7 @@ class NewTransactionRS extends Component {
 
 	  generateTransaction(){
 			
-			this.state.mee.newEscrow(this.state.sellerAddress,this.state.escrowAddress, this.state.note,
+			this.state.mee.newEscrow(this.state.sellerAddress,"0x3258d5F76D68dCcf5Fd6Bef1a1b019e226f9ba57", this.state.note,
 			{from: this.props.fromAddress, value: this.state.amount*(10**18), gas: this.state.gasLimit}, function(error, result){
 				if(!error)
 					{
@@ -366,17 +366,6 @@ class NewTransactionRS extends Component {
 		</tr>
 
 		<tr>
-			<td><p className="left">Escrow Agent Address</p></td>
-			
-		</tr>
-		<tr>
-			<td><input className="left input-address input-pad" type="text" placeholder="" onChange={this.handleEscrowAddressInput} value={this.state.escrowAddress}/>
-			<br/>
-			
-		<p className="small">{this.state.escrowInputInfo}<br/>{this.state.escrowFee}</p></td>
-		</tr>
-
-		<tr>
 			<td><p className="left">Amount to Send [ETH]</p></td>
 		</tr>
 		<tr>
@@ -420,17 +409,6 @@ class NewTransactionRS extends Component {
 		
 	{this.state.sellerInputInfo}</td>
 		
-	</tr>
-
-	<tr>
-		<td><p className="left">Escrow Agent Address</p></td>
-		
-	</tr>
-	<tr>
-		<td><input className="left input-address input-pad" type="text" placeholder="" onChange={this.handleEscrowAddressInput} value={this.state.escrowAddress}/>
-		<br/>
-		
-	<p className="small">{this.state.escrowInputInfo}<br/>{this.state.escrowFee}</p></td>
 	</tr>
 
 	<tr>
